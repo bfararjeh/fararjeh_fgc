@@ -9,9 +9,9 @@ import BurgerMenu from "../components/BurgerMenu";
 export const metadata: Metadata = {
   title: "Fararjeh: Competitor, Coach, Content Creator",
   description: "Fararjeh is a content creator, competitor, and coach for the game Street Fighter 6. Learn everything about him, from his results and achievements to his content and gallery, here!",
-  icons: {
-    apple: '/apple-touch-icon.png',
-  },
+  // icons: {
+  //   apple: '/apple-touch-icon.png',
+  // },
 };
 
 export default function RootLayout({children,}: Readonly<{children: React.ReactNode;}>){
