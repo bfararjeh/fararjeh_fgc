@@ -1,6 +1,6 @@
 # Fararjeh FGC
 
-This is a Next.js project created for learning purposes. I'm using this project to both understand Next.js, React, and Tailwind CSS, as well as familiarise myself with web development concepts and HTML.
+This is a Next.js project created for learning purposes. I'm using this project to both understand Next.js, React, and Tailwind CSS, as well as familiarise myself with web development concepts and HTML. The site is live and is being hosted by Vercel, you can visit it here: [Fararjeh](https://fararjeh-fgc.com/)
 
 # One Month In
 It's been approximately one month since I've begun this project. Below, I'll talk about progress made as well as technologies learnt.
