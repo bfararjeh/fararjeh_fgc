@@ -324,13 +324,13 @@ function scrollToTop() {
               </div>
             </div>
             <div className="py-5 sm:py-8 md:py-10"></div>
-            <iframe
+            {/* <iframe
               src="https://www.eventhubs.com/news/2024/jul/31/how-demand-respect-sf6-gameplay/"
               sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
               className="mx-auto w-[85%] lg:w-full h-[400px] sm:h-[600px] md:h-[800px] border rounded-4xl"
               title="How to demand respect with your play in Street Fighter 6"
               loading="lazy"
-            ></iframe>
+            ></iframe> */}
           </section>
           <section id="gallery" 
           className="pb-0"
