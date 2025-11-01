@@ -6,6 +6,7 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 import MasonryGallery from "../components/MasonryGallery";
 import ReturnSubs from "../components/ReturnSubs";
 import { galleryImages } from "../lib/gallery";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -92,12 +93,15 @@ function scrollToTop() {
             <h2 className="text-center 2xl:text-left">Achievements</h2>
             <div className="flex flex-col 2xl:flex-row">
               <div className="relative w-[85%] 2xl:w-1/2 rounded-xl aspect-square mx-auto">
-                <Image
-                  src="/home/fighting-games.png"
-                  alt="Fararjeh at Red Bull Gaming Sphere"
-                  fill
-                  className="object-cover image"
-                />
+                <Link href="https://www.start.gg/user/4c8f3024" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/home/fighting-games.png"
+                    alt="Fararjeh at Red Bull Gaming Sphere"
+                    fill
+                    className="object-cover image"
+                    unoptimized
+                  />
+                </Link>
               </div>
               <div className="bg-site-bg-dim self-center w-[70%] rounded-b-2xl 2xl:rounded-bl-none 2xl:rounded-r-2xl">
                 <p className="p-6">Aside from catching the tail end of the 2024 season with Kings of the World, the 2025 season was my first official season as a competitor. I managed to travel to a handful of CPT and non-CPT events abroad and domestically, with consistent results. Evo France was my best result to date with a final placing of 33rd out of almost 1700 entrants: a confident promise for the future.<br/><br/>I also competed in the 2025 UK/Ireland World Warrior series; achieving a final standing of 26th within my region. While I initially set a goal to hit the top 20, with the improvements I made throughout the season it would be a struggle to not be satisfied - at least temporarily.</p>
@@ -252,12 +256,15 @@ function scrollToTop() {
                 <p className="p-6">From private tutoring in academia, to informal coaching sicne I started the game, I've always had a knack for breaking down complex topics into simpler, digestible lessons you can apply immediately. Not to mention having studied computer science at university - having directly studied the art of puzzle solving - there is no weakness within you that I cannot bring into the spotlight.<br/><br/> Whether you don't know your biggest weakness or think you do, my coaching will make you a stronger player. I offer single sessions and group deals, all of which are available on my Metafy. Still not convinced? You can check out some reviews of my coaching down below to see for yourself the results of my abilities.</p>
               </div>
               <div className="relative w-[85%] 2xl:w-1/2 rounded-xl aspect-square mx-auto 2xl:order-2 order-1">
-                <Image
-                  src="/home/status.png"
-                  alt="Fararjeh's Metafy Status"
-                  fill
-                  className="object-cover image"
-                />
+                <Link href="https://metafy.gg/@fararjeh" target="_blank" rel="noopener noreferrer">
+                  <Image
+                    src="/home/status.png"
+                    alt="Fararjeh's Metafy Status"
+                    fill
+                    className="object-cover image"
+                    unoptimized
+                  />
+                </Link>
               </div>
             </div>
             <div className="py-0 sm:py-2 md:py-5"></div>
@@ -311,12 +318,15 @@ function scrollToTop() {
             <h2 className="text-center 2xl:text-left">Content Creation</h2>
             <div className="flex flex-col 2xl:flex-row">
             <div className="relative w-[85%] 2xl:w-1/2 rounded-xl aspect-square mx-auto">
+              <Link href="https://www.youtube.com/@fararjeh" target="_blank" rel="noopener noreferrer">
                 <Image
                   src="/home/youtube.png"
                   alt="Fararjeh's YouTube'"
                   fill
                   className="object-cover image"
+                  unoptimized
                 />
+              </Link>
               </div>
 
               <div className="bg-site-bg-dim self-center w-[70%] rounded-b-2xl 2xl:rounded-bl-none 2xl:rounded-r-2xl">
