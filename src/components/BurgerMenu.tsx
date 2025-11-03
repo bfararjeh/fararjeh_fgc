@@ -31,10 +31,10 @@ export default function BurgerMenu() {
       >
         <nav className="flex flex-col gap-8 text-2xl font-centgoth font-bold text-center items-center justify-center">
           <Link href="/" onClick={() => setOpen(false)}>About</Link>
-          <Link href="#achievements" onClick={() => setOpen(false)}>Achievements</Link>
-          <Link href="#coaching" onClick={() => setOpen(false)}>Coaching</Link>
-          <Link href="#content" onClick={() => setOpen(false)}>Content</Link>
-          <Link href="#gallery" onClick={() => setOpen(false)}>Gallery</Link>
+          <Link href="/#achievements" onClick={() => setOpen(false)}>Achievements</Link>
+          <Link href="/#coaching" onClick={() => setOpen(false)}>Coaching</Link>
+          <Link href="/#content" onClick={() => setOpen(false)}>Content</Link>
+          <Link href="/#gallery" onClick={() => setOpen(false)}>Gallery</Link>
           <h3 className="mt-30">Socials</h3>
           <div className="flex flex-row gap-5 items-center">
             <a

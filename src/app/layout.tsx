@@ -10,7 +10,11 @@ export const metadata: Metadata = {
   title: "Fararjeh: Competitor, Coach, Content Creator",
   description: "Fararjeh is a content creator, competitor, and coach for the game Street Fighter 6. Learn everything about him, from his results and achievements to his content and gallery, here!",
   icons: {
+    icon: '/icon.ico',
     apple: '/apple-touch-icon.png',
+  },
+  alternates: {
+    canonical: 'https://fararjeh-fgc.com/',
   },
 };
 
@@ -26,10 +30,10 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
           <aside className="fixed h-screen hidden lg:flex flex-col lg:max-w-[15%] justify-center items-center">
             <nav className="flex flex-col gap-8 mb-[10rem] ml-20">
               <Link id="sidebar" href="/" className="text-left">About</Link>
-              <Link id="sidebar" href="#achievements" className="text-left">Achievements</Link>
-              <Link id="sidebar" href="#coaching" className="text-left">Coaching</Link>
-              <Link id="sidebar" href="#content" className="text-left">Content</Link>
-              <Link id="sidebar" href="#gallery" className="text-left">Gallery</Link>
+              <Link id="sidebar" href="/#achievements" className="text-left">Achievements</Link>
+              <Link id="sidebar" href="/#coaching" className="text-left">Coaching</Link>
+              <Link id="sidebar" href="/#content" className="text-left">Content</Link>
+              <Link id="sidebar" href="/#gallery" className="text-left">Gallery</Link>
               <a id="sidebar" href="mailto:fararenough@gmail.com" className="text-left">Business Enquiries</a>
             </nav>
           </aside>
