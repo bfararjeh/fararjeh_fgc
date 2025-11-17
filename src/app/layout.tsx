@@ -10,8 +10,18 @@ export const metadata: Metadata = {
   title: "Fararjeh: Competitor, Coach, Content Creator",
   description: "Fararjeh is a content creator, competitor, and coach for the game Street Fighter 6. Learn everything about him, from his results and achievements to his content and gallery, here!",
   icons: {
-    icon: '/icon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icon0.svg", type: "image/svg+xml" },
+      { url: "/icon1.png", sizes: "32x32" }
+    ],
+    apple: [
+      { url: "/apple-icon.png", sizes: "180x180" }
+    ],
+  },
+  manifest: "/manifest.json",
+  appleWebApp: {
+    title: "Fararjeh",
   },
   alternates: {
     canonical: 'https://fararjeh-fgc.com/',
