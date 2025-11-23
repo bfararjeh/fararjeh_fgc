@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function InsertFooter() {
   return (
-    <footer className="mt-auto w-full">
+    <footer className="fixed bottom-0 left-0 w-full z-50">
       <nav className="font-centgoth hidden lg:flex w-full justify-center">
         <a
           href="https://youtube.com/@fararjeh"
@@ -41,6 +41,15 @@ export default function InsertFooter() {
         >
           <Image src="/icons/twitch.png" alt="Twitch" width={40} height={40}/>
           Twitch</a>
+
+          <a
+          href="https://discord.gg/pYHYwMGycD"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="footerButton text-stroke"
+        >
+          <Image src="/icons/discord.png" alt="Discord" width={40} height={40}/>
+          Discord</a>
       </nav>
     </footer>
   );

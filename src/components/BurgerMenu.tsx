@@ -65,6 +65,13 @@ export default function BurgerMenu() {
             >
             <Image src="/icons/twitch.png" alt="Twitch" width={40} height={40} className="transition duration-300 hover:brightness-50"/>
             </a>
+            <a
+            href="https://discord.gg/pYHYwMGycD"
+            target="_blank"
+            rel="noopener noreferrer"
+            >
+            <Image src="/icons/discord.png" alt="Discord" width={40} height={40} className="transition duration-300 hover:brightness-50"/>
+            </a>
           </div>
         </nav>
       </aside>

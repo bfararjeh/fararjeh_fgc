@@ -72,8 +72,8 @@ function scrollToTop() {
     <div>
       <main>
         <div className="max-w-[96rem] mx-auto">
-          <section id="hero">
-            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-10">
+          <section id="hero" className="py-12">
+            <div className="w-[90%] aspect-video rounded-lg overflow-hidden shadow-lg mb-10 mx-auto">
               <video
               src="/home/trailer.mp4"
               autoPlay
