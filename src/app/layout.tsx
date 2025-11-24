@@ -5,6 +5,7 @@ import Link from "next/link";
 import InsertHeader from "../components/InsertHeader";
 import InsertFooter from "../components/InsertFooter";
 import BurgerMenu from "../components/BurgerMenu";
+import MailLink from "../components/MailLink";
 
 export const metadata: Metadata = {
   title: "Fararjeh: Competitor, Coach, Content Creator",
@@ -13,10 +14,11 @@ export const metadata: Metadata = {
     icon: [
       { url: "/favicon.ico" },
       { url: "/icon0.svg", type: "image/svg+xml" },
-      { url: "/icon1.png", sizes: "32x32" }
+      { url: "/web-app-manifest-192x192.png", sizes: "192x192" },
+      { url: "/web-app-manifest-512x512.png", sizes: "512x512" }
     ],
     apple: [
-      { url: "/apple-icon.png", sizes: "180x180" }
+      { url: "/apple-touch-icon.png", sizes: "180x180" } 
     ],
   },
   manifest: "/manifest.json",
@@ -39,12 +41,12 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
         <div className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
           <aside className="fixed h-screen hidden lg:flex flex-col lg:max-w-[15%] justify-center items-center">
             <nav className="flex flex-col gap-8 mb-[10rem] ml-20">
-              <Link id="sidebar" href="/" className="text-left">About</Link>
-              <Link id="sidebar" href="/#achievements" className="text-left">Achievements</Link>
-              <Link id="sidebar" href="/#coaching" className="text-left">Coaching</Link>
-              <Link id="sidebar" href="/#content" className="text-left">Content</Link>
-              <Link id="sidebar" href="/#gallery" className="text-left">Gallery</Link>
-              <a id="sidebar" href="mailto:fararenough@gmail.com" className="text-left">Business Enquiries</a>
+              <Link id="sidebar" href="/">About</Link>
+              <Link id="sidebar" href="/#achievements">Achievements</Link>
+              <Link id="sidebar" href="/#coaching">Coaching</Link>
+              <Link id="sidebar" href="/#content">Content</Link>
+              <Link id="sidebar" href="/#gallery">Gallery</Link>
+              <MailLink email="fararenough@gmail.com">Business Enquiries</MailLink>
             </nav>
           </aside>
         </div>
