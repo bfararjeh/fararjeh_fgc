@@ -73,7 +73,7 @@ function scrollToTop() {
       <main>
         <div className="max-w-[96rem] mx-auto">
           <section id="hero" className="py-12">
-            <div className="w-[90%] aspect-video rounded-lg overflow-hidden shadow-lg mb-10 mx-auto">
+            <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-10 mx-auto">
               <video
               src="/home/trailer.mp4"
               autoPlay
@@ -320,8 +320,8 @@ function scrollToTop() {
             <div className="relative w-[85%] 2xl:w-1/2 rounded-xl aspect-square mx-auto">
               <Link href="https://www.youtube.com/@fararjeh" target="_blank" rel="noopener noreferrer">
                 <Image
-                  src="/home/youtube.png"
-                  alt="Fararjeh's YouTube'"
+                  src="/home/content.png"
+                  alt="Fararjeh's YouTube"
                   fill
                   className="object-cover image"
                   unoptimized
@@ -330,17 +330,23 @@ function scrollToTop() {
               </div>
 
               <div className="bg-site-bg-dim self-center w-[70%] rounded-b-2xl 2xl:rounded-bl-none 2xl:rounded-r-2xl">
-                <p className="p-6">Sitting at around <ReturnSubs/> subscribers, what's a fighting game player without some content? Starting with my breakout video - "You Can't Play Neutral", my channel has been growing steadily ever since, as well as branching out to include more content from the same infotainment videos you know and love to more casual montages such as the "Tales from the Gulag" series.<br/><br/>If you need proof of quality then look no further, my video on neutral is the first result when you search up "SF6 Neutral" on YouTube, not to mention it was also featured on the front page of EventHubs: you can read the article down below.</p>
+                <p className="p-6">Sitting at around <ReturnSubs/> subscribers, what's a fighting game player without some content? Since around 2024, I've been producing videos on YouTube that range from educational yet entertaining tutorials to candid clip montages. "You Can't Play Neutral" is the first result when you search up "SF6 Neutral" on YouTube, not to mention it was also featured on the front page of EventHubs: you can read the article
+                <a href="https://www.eventhubs.com/news/2024/jul/31/how-demand-respect-sf6-gameplay/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-blue-600"> here</a>.
+                <br/><br/>As well as my YouTube, I stream around three times a week on Twitch. These streams highlight and show the work it takes to be great, and I cover everything tournament runs and VOD reviews to more relaxed lobbies and casual matches. You can check out this weeks stream schedule below.</p>
               </div>
             </div>
-            <div className="py-5 sm:py-8 md:py-10"></div>
-            <iframe
-              src="https://www.eventhubs.com/news/2024/jul/31/how-demand-respect-sf6-gameplay/"
-              sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
-              className="mx-auto w-[85%] lg:w-full h-[400px] sm:h-[600px] md:h-[800px] border rounded-4xl"
-              title="How to demand respect with your play in Street Fighter 6"
-              loading="lazy"
-            ></iframe>
+            <div className="mt-15 relative w-full rounded-xl aspect-[2/1] mx-auto">
+              <Image
+                src="/home/schedule.png"
+                alt="Fararjeh's Stream Schedule"
+                fill
+                className="object-cover image"
+                unoptimized
+                />
+            </div>
           </section>
           <section id="gallery" 
           className="pb-0"

@@ -40,7 +40,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
 
         <div className="grid grid-cols-1 md:grid-cols-[auto_1fr]">
           <aside className="fixed h-screen hidden lg:flex flex-col lg:max-w-[15%] justify-center items-center">
-            <nav className="flex flex-col gap-8 mb-[10rem] ml-20">
+            <nav className="flex flex-col gap-8 mb-[15rem] ml-20">
               <Link id="sidebar" href="/">About</Link>
               <Link id="sidebar" href="/#achievements">Achievements</Link>
               <Link id="sidebar" href="/#coaching">Coaching</Link>
