@@ -338,12 +338,12 @@ function scrollToTop() {
                 <br/><br/>As well as my YouTube, I stream around three times a week on Twitch. These streams highlight and show the work it takes to be great, and I cover everything tournament runs and VOD reviews to more relaxed lobbies and casual matches. You can check out this weeks stream schedule below.</p>
               </div>
             </div>
-            <div className="mt-15 relative w-full rounded-xl aspect-[2/1] mx-auto">
+            <div id="schedule" className="relative w-full rounded-xl aspect-[2/1] mx-auto">
               <Image
                 src="/home/schedule.png"
                 alt="Fararjeh's Stream Schedule"
                 fill
-                className="object-cover image"
+                className="object-cover image mt-15"
                 unoptimized
                 />
             </div>
@@ -358,7 +358,7 @@ function scrollToTop() {
             <div className="flex justify-center">
               <button
                 onClick={scrollToTop}
-                className=" bg-site-bg-dim text-white font-centgoth font-bold px-6 py-2 rounded-xl hover:bg-neutral-800 transition border-white border-1"
+                id="toTopButton"
               >
                 Back to Top
               </button>

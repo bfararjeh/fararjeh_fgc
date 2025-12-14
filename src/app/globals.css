@@ -104,6 +104,18 @@
   @apply font-centgoth font-bold text-2xl tracking-wide
 }
 
+#toTopButton {
+  @apply bg-site-bg-dim text-white font-centgoth font-bold px-6 py-2 rounded-xl hover:opacity-65 transition border-white border-1
+}
+
+#toScheduleButton {
+  @apply bg-fararjeh-dim text-white font-centgoth font-bold px-6 py-2 rounded-full hover:opacity-65 transition
+}
+
+#toScheduleButtonMobile {
+  @apply bg-fararjeh text-white text-sm font-centgoth font-bold px-5 py-1 rounded-b-full
+}
+
 #backgroundL span {
   z-index:-1;
   opacity:.5;

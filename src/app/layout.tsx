@@ -6,6 +6,7 @@ import InsertHeader from "../components/InsertHeader";
 import InsertFooter from "../components/InsertFooter";
 import BurgerMenu from "../components/BurgerMenu";
 import MailLink from "../components/MailLink";
+import { motion } from "framer-motion";
 
 export const metadata: Metadata = {
   title: "Fararjeh: Competitor, Coach, Content Creator",
