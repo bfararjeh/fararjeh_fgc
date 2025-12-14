@@ -64,10 +64,6 @@ export default function Home() {
     }),
   };
 
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-
   return (
     <div>
       <main>
@@ -357,7 +353,10 @@ function scrollToTop() {
           <section id="return">
             <div className="flex justify-center">
               <button
-                onClick={scrollToTop}
+                onClick={()=> {
+                  document
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }}
                 id="toTopButton"
               >
                 Back to Top
