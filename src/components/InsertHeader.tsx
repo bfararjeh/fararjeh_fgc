@@ -23,42 +23,7 @@ export default function InsertHeader() {
             Fararjeh
           </Link>
         </div>
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5, ease: "easeOut" }}
-          className="whitespace-nowrap hidden lg:block">
-          <button
-            type="button"
-            onClick={() => {
-              document
-              .getElementById("schedule")
-              ?.scrollIntoView({ behavior: "smooth" });
-            }}
-            id="toScheduleButton"
-            >
-            Stream Schedule
-          </button>
-        </motion.div>
       </header>
-    <motion.div
-      initial={{ opacity: 0, y: -6 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
-      className="whitespace-nowrap flex lg:hidden justify-center">
-      <button
-        type="button"
-        onClick={() => {
-          document
-          .getElementById("schedule")
-          ?.scrollIntoView({ behavior: "smooth" });
-        }}
-        id="toScheduleButtonMobile"
-        className="text-stroke"
-        >
-        Stream Schedule
-      </button>
-    </motion.div>
     </div>
   );
 }
