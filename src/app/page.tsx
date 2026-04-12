@@ -68,6 +68,20 @@ export default function Home() {
     <div>
       <main>
         <div className="max-w-[96rem] mx-auto">
+          <section id="fantasyBanner" className="py-10">
+            <div className="flex flex-col 2xl:flex-row justify-center items-center">
+              <Link href="/fantasysf6">
+                <Image
+                  src="/home/fantasy/banner.png"
+                  alt="Fararjeh at Red Bull Gaming Sphere"
+                  width={0}
+                  height={0}
+                  className="object-cover rounded-[5rem] w-[100%]"
+                  unoptimized
+                />
+              </Link>
+            </div>
+          </section>
           <section id="hero" className="py-12">
             <div className="w-full aspect-video rounded-lg overflow-hidden shadow-lg mb-10 mx-auto">
               <video
