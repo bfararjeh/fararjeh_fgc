@@ -1,7 +1,31 @@
 "use client";
 import Image from "next/image";
+import { useState, useEffect } from "react";
+
+const RELEASE_DATE = new Date("2026-04-17T12:00:00Z");
+
+function useCountdown(target: Date) {
+  const [timeLeft, setTimeLeft] = useState<number>(target.getTime() - Date.now());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setTimeLeft(target.getTime() - Date.now());
+    }, 1000);
+    return () => clearInterval(interval);
+  }, [target]);
+
+  return timeLeft;
+}
 
 export default function FantasySF6() {
+  const timeLeft = useCountdown(RELEASE_DATE);
+  const released = timeLeft <= 0;
+
+  const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((timeLeft / (1000 * 60 * 60)) % 24);
+  const minutes = Math.floor((timeLeft / (1000 * 60)) % 60);
+  const seconds = Math.floor((timeLeft / 1000) % 60);
+
   return (
     <main className="flex flex-col items-center justify-center">
       <div className="max-w-[96rem] mx-auto">
@@ -108,20 +132,36 @@ export default function FantasySF6() {
                   unoptimized
                 />
                 <div className="flex flex-col gap-4">
-                  <a
-                    href="https://github.com/bfararjeh/sf6-fantasy-league/releases/download/v1.4.0/FantasySF6.exe"
-                    className="bg-[#006800] text-white font-bold text-xl px-8 py-4 rounded-2xl hover:brightness-120 transition-all text-center"
-                  >
-                    Download Fantasy SF6
-                  </a>
-                  <a
-                    href="https://github.com/bfararjeh/sf6-fantasy-league"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="bg-[#414141] text-white font-bold text-xl px-8 py-4 rounded-2xl hover:brightness-120 transition-all text-center"
-                  >
-                    View on GitHub
-                  </a>
+                  {released ? (
+                    <>
+                      <a
+                        href="https://github.com/bfararjeh/sf6-fantasy-league/releases/download/v1.4.0/FantasySF6.exe"
+                        className="bg-[#006800] text-white font-bold text-xl px-8 py-4 rounded-2xl hover:brightness-120 transition-all text-center"
+                      >
+                        Download Fantasy SF6
+                      </a>
+                      <a
+                        href="https://github.com/bfararjeh/sf6-fantasy-league"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="bg-[#414141] text-white font-bold text-xl px-8 py-4 rounded-2xl hover:brightness-120 transition-all text-center"
+                      >
+                        View Source
+                      </a>
+                    </>
+                  ) : (
+                    <div className="flex flex-col items-center gap-1">
+                      <p className="text-neutral-400 text-sm uppercase tracking-widest mb-2">Releasing in</p>
+                      <div className="flex gap-4 text-center">
+                        {[{ label: "Days", value: days }, { label: "Hours", value: hours }, { label: "Mins", value: minutes }, { label: "Secs", value: seconds }].map(({ label, value }) => (
+                          <div key={label} className="flex flex-col">
+                            <span className="text-4xl font-bold tabular-nums">{String(value).padStart(2, "0")}</span>
+                            <span className="text-neutral-400 text-xs uppercase tracking-widest">{label}</span>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
