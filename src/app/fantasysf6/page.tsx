@@ -77,13 +77,13 @@ export default function FantasySF6() {
           </section>
           <section id="events">
             <div className="flex flex-col gap-2 2xl:gap-6">
-              <div className="flex flex-col 2xl:flex-row gap-4 w-full mx-auto">
+              <div className="flex flex-col xl:flex-row gap-4 w-full mx-auto">
                 <Image
                   src="/home/fantasy/events.png"
                   alt="The Fantasy League Player Pool"
                   width={1200}
                   height={800}
-                  className="w-full h-auto hidden md:block"
+                  className="w-full h-auto min-w-0 hidden xl:block"
                   unoptimized
                 />
                 <Image
@@ -91,7 +91,7 @@ export default function FantasySF6() {
                   alt="The Fantasy League Player Pool"
                   width={1200}
                   height={800}
-                  className="w-full h-auto"
+                  className="w-full h-auto min-w-0"
                   unoptimized
                 />
               </div>
