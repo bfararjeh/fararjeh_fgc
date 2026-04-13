@@ -119,10 +119,10 @@ export default function FantasySF6() {
           </section>
           <section id="download" className="py-12 mt-10 mb-40">
             <div className="flex flex-col items-center md:items-start justify-center gap-10">
-              <div className="w-full 2xl:w-[75%] self-center order-last 2xl:order-first">
+              <div className="w-full 2xl:w-[75%] self-center order-first">
                 <p className="p-2 md:p-6 text-lg md:text-2xl">This app has been in development for 4 months and is finally out to the public! You can download the app here, or check out the source code below! The app is free and always will be, however if you would like to support me you can always simply star the repo on GitHub. More players, events, and updates will be coming throughout the season, if you have a feature you'd like to see, or an idea you just want to share, feel free to email me and I'll add it to the list!<br/><br/>Thank you for downloading, and I hope you win!</p>
               </div>
-              <div className="flex flex-row items-center gap-15 mx-auto">
+              <div className="flex flex-col md:flex-row items-center gap-6 md:gap-15 mx-auto">
                 <Image
                   src="/home/fantasy/logo.png"
                   alt="Fantasy SF6 Logo"
