@@ -32,8 +32,12 @@ export default function FantasySF6() {
         <section id="hero" className="py-12">
           <h1 className="text-4xl md:text-7xl 2xl:text-9xl">Fantasy Street Fighter 6!</h1>
           <div className="w-full md:w-[75%] aspect-video rounded-lg overflow-hidden shadow-lg mb-0 mt-10 md:mt-20 mx-auto bg-neutral-800 flex items-center justify-center">
-            {/* TODO: replace with fantasy trailer */}
-            <p className="text-neutral-400 text-xl">Trailer coming soon</p>
+              <video
+              src="/home/fantasy/trailer.mp4"
+              controls
+              loop
+              playsInline
+              />
           </div>
           <p className="mt-6 md:mt-15 text-lg md:text-xl 2xl:text-4xl">
             Introducing the first ever Street Fighter 6 Fantasy League! Create leagues, draft teams, and track leaderboards throughout the season!
