@@ -341,7 +341,7 @@ export default function Home() {
 
               <div className="bg-site-bg-dim self-center w-[70%] rounded-b-2xl 2xl:rounded-bl-none 2xl:rounded-r-2xl">
                 <p className="p-6">Sitting at around <ReturnSubs/> subscribers, what's a fighting game player without some content? Since around 2024, I've been producing videos on YouTube that range from educational yet entertaining tutorials to candid clip montages. "You Can't Play Neutral" is the first result when you search up "SF6 Neutral" on YouTube, not to mention it was also featured on the front page of EventHubs: you can read the article below.
-                <br/><br/>As well as my YouTube, I stream around three times a week on Twitch. These streams highlight and show the work it takes to be great, and I cover everything tournament runs and VOD reviews to more relaxed lobbies and casual matches. The streams are sporadic in nature due to my current work schedule, but I stream when I play, and I play a lot.</p>
+                <br/><br/>As well as my YouTube, I stream occasionally relative to my schedule on Twitch. These streams highlight and show the work it takes to be great, and I cover everything tournament runs and VOD reviews to more relaxed lobbies and casual matches. The streams are sporadic in nature due to my current work schedule, but I stream when I play, and I play a lot.</p>
               </div>
             </div>
             <div className="py-5 sm:py-8 md:py-10"></div>
