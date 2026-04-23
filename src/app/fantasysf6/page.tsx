@@ -139,7 +139,7 @@ export default function FantasySF6() {
                   {released ? (
                     <>
                       <a
-                        href="https://github.com/bfararjeh/sf6-fantasy-league/releases/download/v1.4.0/FantasySF6.exe"
+                        href="https://github.com/bfararjeh/sf6-fantasy-league/releases/latest/download/FantasySF6.exe"
                         className="hidden md:block bg-[#006800] text-white font-bold text-xl px-8 py-4 rounded-2xl hover:brightness-120 transition-all text-center"
                       >
                         Download Fantasy SF6
